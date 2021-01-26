@@ -1,8 +1,8 @@
-package Student;
+package student;
 
 import java.util.Objects;
 
-public class DancingStudent implements Student{
+public class DancingStudent implements Student {
     private String subject;
     private String name;
 
@@ -25,6 +25,11 @@ public class DancingStudent implements Student{
     }
 
     @Override
+    public String getNameLast() {
+        return null;
+    }
+
+    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
@@ -39,5 +44,13 @@ public class DancingStudent implements Student{
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "DancingStudent{" +
+                "subject='" + subject + '\'' +
+                ", name='" + name + '\'' +
+                '}';
     }
 }

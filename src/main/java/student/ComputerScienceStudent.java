@@ -1,4 +1,4 @@
-package Student;
+package student;
 
 import java.util.Objects;
 
@@ -43,6 +43,11 @@ public class ComputerScienceStudent implements Student {
 
     public String getName() {
         return name;
+    }
+
+    @Override
+    public String getNameLast() {
+        return null;
     }
 
     public void setName(String name) {
