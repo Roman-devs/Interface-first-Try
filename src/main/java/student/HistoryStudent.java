@@ -1,8 +1,8 @@
-package Student;
+package student;
 
 import java.util.Objects;
 
-public class HistoryStudent implements Student{
+public class HistoryStudent implements Student {
     private String subject;
     private String name;
 
@@ -41,6 +41,11 @@ public class HistoryStudent implements Student{
 
     public String getName() {
         return name;
+    }
+
+    @Override
+    public String getNameLast() {
+        return null;
     }
 
     public void setName(String name) {
